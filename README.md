@@ -4,6 +4,10 @@ Overview
 
 EcoSense is a sustainability-focused web application designed to provide users with real-time environmental analytics, sustainability scores, and AI-powered assistance for sustainable living. The app integrates weather forecasting, air quality monitoring, and AI-driven guidance to help users make environmentally conscious decisions.
 
+![Dashboard](https://i.imgur.com/RP1LxtK.png)
+
+![AI Chat](https://i.imgur.com/kpYizgJ.png)
+
 Features 1. Dashboard:
 • Real-time weather updates (temperature, wind speed, humidity, etc.).
 • Location-based air quality index (AQI) and carbon footprint insights.
@@ -35,7 +39,9 @@ cd ecosense
 
     2.	Install Dependencies:
 
+```console
 npm install
+```
 
     3.	Environment Variables:
     •	Create a .env file in the root directory.
@@ -48,7 +54,9 @@ PORT=9090
 
     4.	Run the Project:
 
-npm run start
+```console
+npm run dev
+```
 
     5.	Access the Application:
     •	Open http://localhost:9090 in your browser.
