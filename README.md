@@ -1,36 +1,74 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+EcoSense Web Application - Documentation
 
-## Getting Started
+Overview
 
-First, run the development server:
+EcoSense is a sustainability-focused web application designed to provide users with real-time environmental analytics, sustainability scores, and AI-powered assistance for sustainable living. The app integrates weather forecasting, air quality monitoring, and AI-driven guidance to help users make environmentally conscious decisions.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Features 1. Dashboard:
+• Real-time weather updates (temperature, wind speed, humidity, etc.).
+• Location-based air quality index (AQI) and carbon footprint insights.
+• Sustainability metrics such as energy efficiency and water usage. 2. AI Chatbot:
+• Powered by Socket.IO and OpenAI.
+• Answers sustainability-related queries.
+• Provides personalized suggestions based on current weather conditions. 3. Shop Green:
+• A curated list of eco-friendly products (future expansion). 4. Sustainability Analytics:
+• Real-time data visualization of environmental metrics.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Tech Stack
+• Frontend:
+• React.js (Responsive UI with Material-UI for components)
+• CSS-in-JS for custom styling
+• Backend:
+• Node.js
+• Express.js
+• Socket.IO for real-time AI chatbot interactions
+• APIs:
+• Weather API for forecasting and AQI data.
+• OpenAI API for AI assistance.
+• Database: MongoDB (for storing user preferences and chat history)
+• Deployment: Dockerized setup (scalable and platform-independent)
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+Setup Process 1. Clone the Repository:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+git clone https://github.com/username/ecosense.git
+cd ecosense
 
-## Learn More
+    2.	Install Dependencies:
 
-To learn more about Next.js, take a look at the following resources:
+npm install
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+    3.	Environment Variables:
+    •	Create a .env file in the root directory.
+    •	Add the following:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+WEATHER_API_KEY=your_weather_api_key
+OPENAI_API_KEY=your_openai_api_key
+MONGODB_URI=your_mongodb_connection_string
+PORT=9090
 
-## Deploy on Vercel
+    4.	Run the Project:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+npm run start
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+    5.	Access the Application:
+    •	Open http://localhost:9090 in your browser.
+
+Future Expansion 1. Product Recommendations:
+• Integrate OpenFoodFacts API for product sustainability data.
+• Add recyclability scoring using Material AI. 2. User Profiles:
+• Track and display user-specific sustainability progress over time. 3. Gamification:
+• Introduce badges and rewards for sustainable actions. 4. Mobile App:
+• Develop a React Native app for better accessibility. 5. Carbon Offset Integration:
+• Partner with carbon offset programs to allow users to directly contribute to environmental initiatives.
+
+How It Works 1. Weather & AQI Data:
+• The app fetches real-time weather and air quality data using the Weather API based on the user’s geolocation. 2. AI Chatbot:
+• Socket.IO ensures seamless communication between the user and the AI.
+• The chatbot understands current weather and provides relevant sustainability tips (e.g., energy-saving tips during high energy usage days). 3. Sustainability Scores:
+• Metrics are calculated using API integrations and algorithms to assess energy consumption, water usage, and carbon footprint.
+
+Screenshots
+
+(Refer to the uploaded screenshot for a sample dashboard interface.)
+
+Feel free to contribute and make the world greener! 🌱
