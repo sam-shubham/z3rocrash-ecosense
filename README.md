@@ -54,7 +54,6 @@ npm install
 ```console
 WEATHER_API_KEY=your_weather_api_key(OPTIONAL)
 OPENAI_API_KEY=your_openai_api_key
-PORT=9090
 ```
 
 ### 4. Run the Project:
