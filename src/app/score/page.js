@@ -29,7 +29,7 @@ export default function SustainabilityScore() {
   };
 
   return (
-    <div className="p-6 bg-gray-900 text-white rounded-xl w-full max-w-md mx-auto text-center shadow-lg">
+    <div className="p-6 mt-8 bg-gray-900 text-white rounded-xl w-full max-w-md mx-auto text-center shadow-lg">
       <h2 className="text-2xl font-bold mb-4">🌿 Sustainability Score</h2>
 
       <div className="grid grid-cols-2 gap-4 mb-4">

@@ -127,17 +127,25 @@ const SustainabilityDashboard = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.3 }}
           >
-            {["Chat With Ai"].map((action, index) => (
-              <div
-                key={action}
-                onClick={() =>
-                  document.getElementById("chatbot-button").click()
-                }
-                className="bg-gray-800/50 rounded-2xl p-6 cursor-pointer hover:bg-gray-700/50 transition-colors"
-              >
-                <h3 className="text-xl ">{action}</h3>
-              </div>
-            ))}
+            {["Chat With Ai", "Sustaniblity Score", "Shop Green"].map(
+              (action, index) => (
+                <div
+                  key={action}
+                  onClick={() => {
+                    if (action === "Chat With Ai") {
+                      document.getElementById("chatbot-button").click();
+                    } else if (action === "Sustaniblity Score") {
+                      window.open("/score");
+                    } else if (action === "Shop Green") {
+                      window.open("/shop");
+                    }
+                  }}
+                  className="bg-gray-800/50 rounded-2xl p-6 cursor-pointer hover:bg-gray-700/50 transition-colors"
+                >
+                  <h3 className="text-xl ">{action}</h3>
+                </div>
+              )
+            )}
           </motion.div>
         </div>
       </div>
