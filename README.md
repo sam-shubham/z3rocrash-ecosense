@@ -52,9 +52,8 @@ npm install
 #### Add the following:
 
 ```console
-WEATHER_API_KEY=your_weather_api_key
+WEATHER_API_KEY=your_weather_api_key(OPTIONAL)
 OPENAI_API_KEY=your_openai_api_key
-MONGODB_URI=your_mongodb_connection_string
 PORT=9090
 ```
 
